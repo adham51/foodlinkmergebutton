@@ -1,0 +1,62 @@
+
+
+
+.doner-dashboard h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.8rem;
+    margin-bottom: 30px; 
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .doner-dashboard {
+        padding: 20px;
+    }
+
+    .dashboard-content {
+        flex-direction: column; 
+    }
+
+    .toggle-add-food-button,
+    .add-food-form button {
+        font-size: 1rem;
+    }
+
+    .food-list li {
+        font-size: 1rem;
+    }
+
+    .add-food-form h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+.card {
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.custom-label {
+    font-weight: bold; 
+    color: #298e46; 
+    font-size: 1rem; 
+    margin-bottom: 5px; 
+    text-transform: uppercase; 
+    letter-spacing: 0.05rem; 
+}

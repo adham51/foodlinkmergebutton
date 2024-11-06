@@ -1,0 +1,158 @@
+/* Main navbar container */
+.navbar {
+    width: 100%; 
+    background-color: #ffffff;
+    padding: 15px 70px;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Container for the nav elements */
+.navContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo section */
+.navLogo {
+    width: 160px;
+}
+
+.navLogo img {
+    height: 70px;
+    width: auto;
+    position: absolute;
+    /* right: 100px; */
+    top: 16px;
+    left: 30px;
+}
+
+/* Navbar links section */
+.navLinks {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Navbar list items */
+.nav-item {
+    list-style: none;
+}
+
+/* Remove padding and background color */
+.navLink {
+    color: #00615f;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0; /* Remove padding */
+    background-color: transparent; /* Ensure background is transparent */
+    /* transition: color 0.3s ease; */
+    outline: none; /* Remove default browser focus outline */
+}
+
+/* Remove the outline on focus */
+.navLink:focus {
+    outline: none; /* Completely remove the rectangle (outline) */
+}
+
+/* Hover and focus states without background color or border radius */
+.navLink:hover {
+    color: #0056b3;
+}
+
+/* Login button styling */
+.loginButton {
+    background-color: #00615f;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 7px;
+}
+
+.loginButton:hover,
+.loginButton:focus {
+    background-color: #098d8b;
+    color: #ffffff;
+}
+
+.logoutButton {
+    background-color: #e42424;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 7px;
+}
+.logoutButton:hover,
+.logoutButton:focus {
+    background-color: #ff4d4d;
+    color: #ffffff;
+}
+
+
+/* Hamburger menu button */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 35px;
+    height: 4px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 992px) {
+    .navLinks {
+        display: none; /* Initially hidden */
+        flex-direction: column;  /* Stack the links vertically */
+        width: 100%; /* Take up the full width */
+        background-color: white; 
+        position: absolute; /* To make it appear below the navbar */
+        top: 100px; /* Adjust based on navbar height */
+        left: 0;
+        padding: 10px;
+    }
+
+    .navLinks.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navLogo {
+        width: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navLogo {
+        margin-bottom: 0;
+    }
+
+    .navLinks {
+        align-items: center;  /* Center the links in mobile view */
+    }
+}

@@ -1,0 +1,174 @@
+/* Wrapper for the footer */
+.footerWrapper {
+    width: 100%;
+}
+
+/* Top Layer (lighter background) */
+.footerTop {
+    background-color: #00615f;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between; /* Space out the sections evenly */
+    align-items: center; /* Center vertically */
+}
+
+/* Left Section */
+.leftSection {
+    flex: 1;
+    text-align: center; /* Center content horizontally */
+}
+
+.logo {
+    width: 350px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+/* Center Section */
+.centerSection {
+    flex: 2;
+    text-align: center; /* Center content horizontally */
+}
+
+.socialLinks {
+    margin-bottom: 40px; /* Reduced margin for better alignment */
+}
+
+
+.socialLinks a {
+    margin: 0 15px; /* Increased margin for better spacing */
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem; /* Increased font size for better visibility */
+}
+
+.socialLinks a:hover {
+    text-decoration: underline;
+}
+
+/* App Links */
+.appLinks {
+    margin: 10px 0; /* Adjusted margin for better alignment */
+}
+
+.appLinks img {
+    width: 120px;
+    margin: 0 10px;
+}
+
+/* Contact Info */
+.contactInfo {
+    margin-top: 30px; /* Adjusted margin for better alignment */
+
+}
+
+.contactInfo p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Right Section */
+.rightSection {
+    flex: 1;
+    text-align: center; /* Center content horizontally */
+}
+
+.sdgs {
+    display: flex;
+    justify-content: center; /* Center SDGs horizontally */
+    flex-direction: row; /* Stack SDGs vertically */
+    align-items: center; /* Center SDGs vertically */
+    gap: 40px;
+
+}
+
+.sdgImage {
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    padding-bottom: -20px;
+
+}
+
+/* Bottom Layer (darker background) */
+.footerBottom {
+    background-color: #005250;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.bottomLinks {
+    margin-bottom: 15px;
+}
+
+.bottomLinks a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.bottomLinks a:hover {
+    text-decoration: underline;
+}
+
+.footerBottom p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: rgb(201, 188, 188);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) { /* Adjust the max-width as needed for your design */
+    .footerBottom {
+        padding: 10px 0; /* Reduce padding for mobile */
+        display: flex;
+        flex-direction: column;
+    }
+    .footerTop{
+        display:flex;
+        flex-direction: column;
+    }
+    .leftSection img {
+        margin-bottom: 40px;
+    }
+
+    .bottomLinks {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align the links */
+        margin-bottom: 10px; /* Reduced margin for mobile */
+    }
+
+    .bottomLinks a {
+        margin: 5px 0; /* Vertical spacing between links */
+        font-size: 0.7rem; /* Smaller font size for mobile */
+    }
+
+    /* Hide specific links on mobile */
+    .bottomLinks a:nth-child(3), /* Cookie Policy */
+    .bottomLinks a:nth-child(4), /* Terms & Conditions */
+    .bottomLinks a:nth-child(5) { /* Contact Us */
+        display: none; /* Remove these links from mobile view */
+    }
+
+    .footerBottom p {
+        font-size: 0.6rem; /* Smaller font size for copyright */
+        margin: 5px 0; /* Added margin for spacing */
+    }
+
+    /* Adjust the logo size for mobile */
+    .logo {
+        width: 200px; /* Make the logo smaller */
+        margin-bottom: 10px; /* Reduced margin for better spacing */
+    }
+
+    /* Adjust the SDG image size for mobile */
+    .sdgImage {
+        width: 70px; /* Make the SDG images smaller */
+        margin-bottom: 5px; /* Adjust margin for spacing */
+    }
+}

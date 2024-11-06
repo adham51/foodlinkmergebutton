@@ -1,0 +1,148 @@
+.hero {
+    height: 90vh; 
+    width: 100vw; 
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    left: 0px;
+    margin-top: 100px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Assets/Home-img.png'); /* Your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    z-index: 0;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.42); /* Dark overlay */
+    z-index: 1; /* Ensure the overlay is above the blurred background */
+}
+
+.heroContent {
+    z-index: 2; /* Ensure content is above everything else */
+    text-align: center; 
+}
+
+.heroContent span {
+    font-size: 70px; 
+    margin-bottom: 200px;
+    font-weight: bold;
+    color: white;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+}
+
+/* Primary Button Style */
+.btnPrimary {
+    background-color: #e7627c; /* Similar to learnMorebtn */
+    padding: 18px;
+    font-size: 16px;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s; /* Smooth transition */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+
+}
+
+.btnPrimary:hover {
+    background-color: white;
+    color: black; /* Change to white background and black text on hover */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+
+}
+
+/* Secondary Button Style */
+.btnSecondary {
+    background-color: transparent;
+    padding: 18px;
+    font-size: 16px;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s; /* Smooth transition */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+
+}
+
+.btnSecondary:hover {
+    background-color: white;
+    color: black; /* Inverse colors on hover */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+
+}
+
+/* Additional Text Styling */
+.heroContent span {
+    font-size: 40px; 
+    font-weight: bold;
+    display: block; /* Change span to block */
+    margin-bottom: 50px; /* Space below the main headline */
+    padding-bottom: 20px;    
+    text-transform: uppercase;
+}
+
+.subheadline {
+    font-size: 1.5rem; /* Slightly smaller than the main headline */
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px; /* Space below the subheadline */
+    text-transform: uppercase;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .heroContent span {
+        font-size: 2rem; /* Reduce font size for smaller devices */
+        margin-bottom: 30px; /* Adjust spacing below headline */
+    }
+    .subheadline {
+        font-size: 1.2rem; /* Smaller subheadline for tablets */
+    }
+    .buttonGroup {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 10px; /* Reduce gap between buttons */
+        margin-top: 10px; /* Adjust margin for better spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .heroContent span {
+        font-size: 1.2rem; /* Further reduce font size for mobile */
+    }
+    .subheadline {
+        font-size: 1rem; /* Smaller subheadline for very small devices */
+    }
+    .btnPrimary,
+    .btnSecondary {
+        width: 60%; /* Make buttons full width on mobile */
+    }
+}
+

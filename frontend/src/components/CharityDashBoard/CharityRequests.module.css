@@ -1,0 +1,84 @@
+/* Container for the entire charity requests page */
+.container {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Page title styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for header */
+    text-align: center;
+}
+
+/* Container for the requests list using grid layout */
+.requestList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create a flexible 3-column layout */
+    gap: 20px; /* Space between each request card */
+    padding: 0;
+    list-style-type: none; /* Remove default list styling */
+}
+
+/* Each request card */
+.requestItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff; /* White background for each request */
+    border: 1px solid #ddd; /* Light border for separation */
+    padding: 15px;
+    border-radius: 5px; /* Rounded corners for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the cards */
+    transition: box-shadow 0.2s ease; /* Smooth transition for hover effect */
+    height: 100%; /* Ensure all items have the same height */
+}
+
+.requestItem:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Align and style the request text */
+.requestItem div {
+    flex-grow: 1;
+}
+
+.requestItem span,
+p {
+    font-weight: bold;
+    color: #333; /* Dark color for text */
+}
+
+/* Cancel button styling */
+.cancelButton {
+    background-color: #ff4c4c; /* Red background for cancel button */
+    color: white; /* White text for contrast */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.cancelButton:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+/* Success and error message styles */
+.successMessage,
+.errorMessage {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.successMessage {
+    color: #4CAF50; /* Green for success messages */
+}
+
+.errorMessage {
+    color: #ff4c4c; /* Red for error messages */
+}

@@ -1,0 +1,325 @@
+.aboutUs {
+    padding: 60px 20px;
+    width: 100vw;
+    height: 1000px;
+    background-color: #f9f3f0;
+    position: relative;
+}
+
+/* Our Mission Title */
+.missionTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+}
+
+.titleRectangle {
+    background-color: #00615f;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    left: -30px;
+}
+
+.missionTitle h2 {
+    margin-left: 90px;
+    color: #00615f;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+}
+
+.missionText p {
+    color: #00615f;
+    font-size: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Top Text: Why Use FoodLink */
+.topText {
+    position: absolute;
+    top: 500px; /* Start much lower initially */
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(200px); /* Start from further below */
+    transition: opacity 1s ease, transform 2s ease-in-out;
+}
+
+.topText h2 {
+    color: #00615f;
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.topText .topTextFL {
+    color: rgb(255, 121, 115);
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'konga pro', sans-serif;
+}
+
+/* Left Text: Help the environment by reducing food waste */
+.textLeft {
+    position: absolute;
+    left: 70px;
+    top: 500px; /* Start much lower initially */
+    max-width: 420px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(400px); /* Start lower to rise up properly */
+    transition: opacity 1s ease, transform 2.8s ease-in-out;
+}
+
+.textLeft p {
+    font-size: 31px;
+    color: #00615f;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.impactStats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    color: #00615f;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.stat p {
+    color: #00615f;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.textLeft i {
+    font-size: 35px;
+    margin-right: 20px; /* Space between icon and text */
+    padding-right: 10px; /* Space between icon and text */
+    color: #00615f;
+}
+
+/* Right Text: Rescue food near you */
+.textRight {
+    position: absolute;
+    right: 120px;
+    top: 500px; /* Start much lower initially */
+    max-width: 400px;
+    text-align: right;
+    opacity: 0;
+    transform: translateY(300px); /* Start lower to rise up properly */
+    transition: opacity 1s ease, transform 2.8s ease-in-out;
+}
+
+.textRight p {
+    font-size: 31px;
+    color: #00615f;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.textRight i {
+    font-size: 35px;
+    margin-left: 20px; /* Space between text and icon */
+    color: #00615f;
+}
+
+/* Image Container and Image */
+.imageContainer {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.missionImage {
+    width: 550px;
+    height: auto;
+    opacity: 0;
+    transform: translateY(200px); /* Start slightly below for upward animation */
+    transition: opacity 1s ease, transform 2.5s ease-in-out;
+}
+
+.revealImage {
+    opacity: 1;
+    transform: translateY(-216px); /* Image slides up and appears */
+}
+
+/* Reveal Animation for Text */
+.revealText {
+    opacity: 1;
+    transform: translateY(-170px); /* Text slides up and appears in the correct position */
+}
+
+.revealRightLeft {
+    opacity: 1;
+    transform: translateY(200px); /* Text slides up and appears in the correct position */
+}
+
+@media (max-width: 768px) {
+    .missionTitle h2 {
+        font-size: 2rem;
+    }
+    .missionText p {
+        font-size: 1.5rem;
+    }
+    .topText h2{
+        font-size: 1.8rem;
+    }
+    .aboutUs .topText {
+        margin-bottom: 100px; /* Adjust this value as needed */
+    }
+    .topText .topTextFL{
+        font-size: 2.6rem;
+    }
+    .revealText {
+        opacity: 1;
+        transform: translateY(-220px); /* Text slides up and appears in the correct position */
+    }
+
+    .revealImage {
+        opacity: 1;
+        transform: translateY(-61px); /* Image slides up and appears */
+    }
+
+    .missionImage {
+        width: 440px;
+        height: auto;
+    }
+
+    .revealRightLeft {
+        opacity: 1;
+        transform: translateY(-40px); /* Text slides up and appears in the correct position */
+    }
+    
+    .impactStats .stat h3 {
+        font-size: 2rem;
+    }
+    .textLeft p{
+        font-size: 1.4rem;
+    }
+    .textRight{
+        margin-top: 80px;
+    }
+    .textRight p{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .missionTitle h2 {
+        font-size: 1.7rem;
+    }
+    .missionText p {
+        font-size: 1.3rem;
+    }
+    .topText h2{
+        font-size: 1.4rem;
+    }
+    .aboutUs .topText {
+        margin-bottom: 120px; /* Adjust this value as needed */
+    }
+    .topText .topTextFL{
+        font-size: 2.2rem;
+    }
+    .revealText {
+        opacity: 1;
+        transform: translateY(-240px); /* Text slides up and appears in the correct position */
+    }
+
+    .revealImage {
+        opacity: 1;
+        transform: translateY(23px); /* Image slides up and appears */
+    }
+
+    .missionImage {
+        width: 350px;
+        height: auto;
+    }
+
+    .revealRightLeft {
+        opacity: 1;
+        transform: translateY(0px); /* Text slides up and appears in the correct position */
+    }
+    
+    .impactStats .stat h3 {
+        font-size: 1.3rem;
+    }
+    .textLeft p{
+        font-size: 1.3rem;
+    }
+    .textRight{
+        margin-top: 80px;
+    }
+    .textRight p{
+        font-size: 1.3rem;
+    }
+}
+
+    @media (max-width: 390px) {
+        .missionTitle h2 {
+            font-size: 1.7rem;
+        }
+        .missionText p {
+            font-size: 1.3rem;
+        }
+        .topText h2{
+            font-size: 1.4rem;
+        }
+        .aboutUs .topText {
+            margin-bottom: 120px; /* Adjust this value as needed */
+        }
+        .topText .topTextFL{
+            font-size: 2.2rem;
+        }
+        .revealText {
+            opacity: 1;
+            transform: translateY(-210px); /* Text slides up and appears in the correct position */
+        }
+    
+        .revealImage {
+            opacity: 1;
+            transform: translateY(-7px); /* Image slides up and appears */
+        }
+    
+        .missionImage {
+            width: 350px;
+            height: auto;
+        }
+    
+        .revealRightLeft {
+            opacity: 1;
+            transform: translateY(0px); /* Text slides up and appears in the correct position */
+        }
+        
+        .impactStats .stat h3 {
+            font-size: 1.3rem;
+        }
+        .textLeft p{
+            font-size: 1.3rem;
+        }
+        .textRight{
+            margin-top: 80px;    
+        }
+        .textRight p{
+            font-size: 1.3rem;
+        }
+
+}

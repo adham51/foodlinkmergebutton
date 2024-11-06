@@ -1,0 +1,40 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+:root {
+  --primary-color: #4CAF50; /* Green */
+  --secondary-color: #FF9800; /* Orange */
+  --accent-color: #F44336; /* Red */
+  --background-color: #FAFAFA; /* Light grey */
+  --text-color: #333; /* Dark grey */
+}
+
+html,body{
+  overflow-x: hidden !important;
+}
+
+

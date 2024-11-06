@@ -1,0 +1,94 @@
+/* General Container Styles */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+.label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Input Styles */
+.input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px; /* More rounded corners */
+    margin-bottom: 15px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+/* Focus Effect for Inputs */
+.input:focus {
+    border-color: #5cb85c; /* Green border on focus */
+    outline: none;
+}
+
+/* Submit Button Styling */
+.submitButton {
+    padding: 12px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.submitButton:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Error and Success Messages */
+.errorMessage {
+    color: #d9534f; /* Red color for errors */
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.successMessage {
+    color: #5cb85c; /* Green color for success messages */
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Back Button Styling */
+.backButton {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.backButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

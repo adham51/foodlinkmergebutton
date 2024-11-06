@@ -1,0 +1,65 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+  }
+  
+  .navLeft {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: aliceblue;
+  }
+  
+  .navRight {
+    display: flex;
+    gap: 15px;
+  }
+  .dangerButton {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navButton {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navButton:hover {
+    background-color: #2b2929;
+  }
+  
+  .charityName {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navRight {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+  
+    .navButton {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }

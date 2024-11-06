@@ -1,0 +1,123 @@
+.howItWorks {
+    padding: 60px 20px;
+    text-align: left;
+    background-color: #00615f;
+    width: 100vw;
+}
+
+/* Title Container */
+.titleContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.titleRectangle {
+    background-color: #fff;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    left: -20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 95px;
+}
+
+/* Steps Container with Flexbox for layout */
+.stepsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 0px; /* Space between sections */
+}
+
+/* Left and Right Columns (Donors and Charities) */
+.stepsColumn {
+    background-color: #00615f; /* White background to make text visible */
+    padding: 30px; /* Added padding for better spacing inside rectangles */
+    border-radius: 10px; /* Rounded corners */
+    height: 340px; /* Set a fixed minimum height for consistent layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align content vertically */
+}
+
+/* Step List */
+.stepList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.stepList li {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #00615f; /* Set text color to match background */
+    margin-bottom: 20px;
+}
+
+/* Numbered Step */
+.numberedStep {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-right: 15px;
+    color: #00615f; /* Ensure number is visible */
+}
+
+/* Step Headers */
+.stepsColumn h3 {
+    font-size: 2rem;
+    color: #ffffff; /* Text inside the box will be the same as background color */
+    margin-bottom: 20px;
+}
+
+/* Image in the middle */
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 640px; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .stepsContainer {
+        flex-direction: column; /* Change flex direction to column for mobile */
+        align-items: center; /* Center items in the column layout */
+    }
+
+    /* Optionally adjust the image size for mobile */
+    .image {
+        width: 100vw; /* Make the image responsive */
+        height: auto;
+        max-width: 640px; /* Set a max width for larger screens */
+        margin: 20px 0px 80px 0;        
+    }
+
+    /* Ensure the steps columns are full width on mobile */
+    .stepsColumn {
+        width: 100%; /* Make columns full width */
+    }
+    .titleContainer .title{
+        font-size: 2rem;
+    }
+
+    .stepsColumn h3{
+        font-size: 1.7rem;
+    }
+    .stepList li {
+        font-size: 1.1rem;
+    }
+
+}
+

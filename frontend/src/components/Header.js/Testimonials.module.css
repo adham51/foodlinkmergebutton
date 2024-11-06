@@ -1,0 +1,190 @@
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #f9f3f0;
+    width: 100vw;
+    position: relative;
+}
+
+/* Title Container with Rectangle and Title on the Same Line */
+.titleContainer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.titleRectangle {
+    background-color: #00615f;
+    width: 100px;
+    height: 5px;
+    margin-right: 10px;
+    position: absolute;
+    left: -10px;
+}
+
+.titleContainer h2 {
+    font-size: 2.5rem;
+    color: #00615f;
+    margin: 0;
+    margin-left: 100px;
+}
+
+/* Header */
+.header {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.header h3 {
+    font-size: 2rem;
+    color: #00615f;
+    margin-bottom: 80px;
+}
+
+.highlightedText {
+    color: rgb(255, 121, 115);
+}
+
+/* Testimonials Grid */
+.testimonialsGrid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+    z-index: 0;
+}
+
+/* Testimonial Card */
+.testimonialCard {
+    background-color: #fff;
+    border: 2px solid #dfcde6;
+    border-radius: 32px;
+    padding: 36px;
+    width: 440px;
+    height: 450px; 
+    text-align: left; 
+    display: flex;
+    flex-direction: column; /* Ensure card contents stack */
+    justify-content: space-between; /* Space contents evenly */
+    position: relative; /* Make position relative for absolute children */
+    z-index: 0;
+}
+
+/* Card Content */
+.cardContent {
+    position: relative; /* Allows absolute positioning of children */
+    padding-bottom: 70px; /* Space for personInfo */
+    flex-grow: 1; /* Allow card content to grow */
+}
+
+.cardContent h4 {
+    font-size: 1.6rem;
+    color: #2A1150;
+    margin-bottom: 20px;
+}
+
+/* Quotation Icon */
+.quoteIcon {
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.2);
+    width: 170px; /* Keep original size */
+    position: absolute;
+    top: -120px; /* Keep original positioning */
+    right: -100px; /* Keep original positioning */
+    opacity: 0.2; /* Keep original opacity */
+    z-index: 10; /* Ensure it's on top of other elements */
+}
+
+/* Card Content Paragraph */
+.cardContent p {
+    font-size: 1.1rem;
+    color: #2A1150;
+    margin-bottom: 50px;
+}
+
+/* Person Information */
+.personInfo {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Fixed positioning within the card */
+    bottom: 20px; /* Keep it at the bottom of the card */
+    left: 36px; /* Align to the left */
+    width: calc(100% - 72px); /* Full width minus margins */
+}
+
+/* Image on the left */
+.personImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+/* Aligning the name and role */
+.personDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.personDetails h5, .personDetails p {
+    margin: 0;
+    color: #00615f;
+}
+
+.personDetails h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.personDetails p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .testimonialsGrid {
+        flex-direction: column; /* Stack cards in a column */
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .testimonialCard {
+        width: 100%; /* Make cards full width */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Reduce padding for mobile */
+    }
+
+    .cardContent h4 {
+        font-size: 1.2rem; /* Further reduce heading font size for mobile */
+    }
+
+    .cardContent p {
+        font-size: 0.9rem; /* Further reduce paragraph font size for mobile */
+    }
+    
+    .header h3 {
+        font-size: 1.5rem; /* Adjust header font size for mobile */
+        margin-bottom: 40px; /* Reduce margin */
+    }
+
+    .titleContainer h2 {
+        font-size: 2rem; /* Adjust title font size for mobile */
+    }
+
+    .quoteIcon {
+        font-size: 4rem;
+        color: rgba(0, 0, 0, 0.2);
+        width: 100px; /* Keep original size */
+        position: absolute;
+        top: -60px; /* Keep original positioning */
+        right: -50px; /* Keep original positioning */
+        opacity: 0.2; /* Keep original opacity */
+        z-index: 10; /* Ensure it's on top of other elements */
+    }
+}

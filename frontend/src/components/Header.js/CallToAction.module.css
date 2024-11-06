@@ -1,0 +1,146 @@
+.foodWasteInfo {
+    padding: 60px 20px;
+    margin-top: -90px;
+    background-color: #f9f3f0;
+    text-align: center;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px; /* Add some spacing below the title */
+}
+
+.titleRectangle {
+    background-color: #00615f; /* Match the color used in testimonials */
+    width: 100px; /* Width of the rectangle */
+    height: 5px; /* Height of the rectangle */
+    margin-right: 10px; /* Spacing between rectangle and title */
+    position: absolute;
+    left: -20px;
+}
+
+.titleContainer h2 {
+    font-size: 2.5rem;
+    color: #00615f;
+    margin: 0;
+    margin-left: 100px;
+}
+
+.header h2 {
+    font-size: 2.1rem;
+    color: #00615f;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    width: 850px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Info grid styling */
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 70px;
+}
+
+.infoItem {
+    width: 400px; /* Set a fixed width */
+    height: 270px; /* Set a fixed height */
+    display: flex; /* Use flexbox to align content */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center align children horizontally */
+    justify-content: center; /* Center align children vertically */
+    text-align: center; /* Center the text inside */
+    padding: 10px; /* Optional: Add padding for inner spacing */
+    border-radius: 15px; /* Optional: Add rounded corners */
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00615f;
+}
+
+.infoItem h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00615f;
+    margin-bottom: 5px;
+}
+
+.infoItem p {
+    font-size: 16px;
+    color: #00615f;
+}
+
+.secondline {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    color: #00615f;
+}
+
+.source {
+    font-size: 14px !important;
+    color: #999 !important;
+    margin-top: 10px !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .infoGrid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        padding-left: 0; /* Remove padding on the left */
+    }
+    .titleContainer h2{
+        font-size: 1.5rem !important;
+    }
+
+    .infoItem {
+        width: auto; /* Allow width to adjust */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .header p {
+        font-size: 1rem; /* Smaller font size for mobile */
+        max-width: fit-content;
+    }
+
+    .header h2 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .titleContainer h2 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .icon {
+        font-size: 2rem; /* Smaller icon size for mobile */
+    }
+
+    .infoItem h3 {
+        font-size: 20px; /* Smaller heading size for mobile */
+    }
+
+    .infoItem p {
+        font-size: 14px; /* Smaller paragraph size for mobile */
+    }
+
+    .secondline {
+        font-size: 18px !important; /* Smaller size for second line */
+    }
+
+    .source {
+        font-size: 12px !important; /* Smaller size for source */
+    }
+}

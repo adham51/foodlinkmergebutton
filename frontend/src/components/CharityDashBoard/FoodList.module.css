@@ -1,0 +1,125 @@
+/* General Container Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8d9094; /* Softer background */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    
+}
+
+/* Title Styling */
+.header {
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    color: #f3ecec; /* Soft dark gray */
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Food List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+li {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White card background */
+    margin: 12px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Deepen shadow on hover */
+}
+
+li strong {
+    font-size: 20px;
+    color: #2a9d8f; /* Soft green for emphasis */
+}
+
+/* Description Text Styling */
+li p {
+    margin: 5px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #666; /* Softer gray for text */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    li {
+        padding: 15px;
+    }
+
+    li strong {
+        font-size: 18px;
+    }
+}
+
+/* Food Item Layout */
+.foodItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Food Image Styling */
+.foodImage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #2a9d8f; /* Border matches the accent color */
+    margin-right: 20px;
+    transition: transform 0.2s ease;
+}
+
+.foodImage:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Food Details Styling */
+.foodDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foodDetails strong {
+    font-size: 20px;
+    color: #264653; /* Darker green for strong contrast */
+}
+
+.foodDetails p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555; /* Subtle text color */
+}
+.foodDetails span {
+    font-size: 16px;
+    color: #033a07; /* Lighter orange for contrast */
+  }
+
+  .blueText {
+    color: blue;
+}
+
+.greenText {
+    color: green;
+}

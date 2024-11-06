@@ -1,0 +1,80 @@
+.downloadcontainer {
+    background-color: #f4f4f4; /* Preferred background color */
+    padding: 40px 0px 10px 0;
+}
+
+.callToAction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005250; /* Dark green background */
+    color: white; /* Default text color */
+    width: 90%; /* Set your desired width */
+    margin: 0 auto; /* This centers the div horizontally */
+    padding: 0 60px;
+    height: 150px;
+    margin-bottom: 100px;
+}
+
+.left {
+    font-weight: bold;
+    font-size: 36px;
+    color: #f4f4f4; /* Default color */
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid white; /* Default border color */
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: bold;
+    color: white; /* Default text color */
+}
+
+.right:hover {
+    color: #e3d659; /* Change this to greenish-yellowish on hover */
+    border: 2px solid #e3d659; /* Change border color on hover */
+}
+
+.arrow {
+    margin-left: 2px;
+    transition: right 0.3s ease, color 0.3s ease; /* Added color transition */
+    font-size: 30px;
+    position: absolute;
+    top: -3px;
+    right: -14px; /* Set this to a suitable value to keep it visible */
+    color: white; /* Default arrow color */
+}
+
+/* Hover effect for the arrow */
+.right:hover .arrow {
+    right: -22px; /* Adjust this to move the arrow on hover without disappearing */
+    color: #e3d659; /* Change this to greenish-yellowish on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .callToAction {
+        flex-direction: column; /* Stack the left and right sections */
+        height: auto; /* Allow height to adjust */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .left {
+        font-size: 24px; /* Smaller font size for mobile */
+        text-align: center; /* Center text on mobile */
+        margin-bottom: 10px; /* Add margin for spacing */
+    }
+
+    .right {
+        padding: 8px 16px; /* Smaller padding for mobile */
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .arrow {
+        font-size: 24px; /* Smaller arrow size for mobile */
+    }
+}
